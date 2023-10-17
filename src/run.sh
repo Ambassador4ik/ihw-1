@@ -1,0 +1,1 @@
+java -jar rars.jar sm nc p ./assembly/main.asm

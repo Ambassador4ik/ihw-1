@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  rars-interactive:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    command: ["bash", "run.sh"]
+
+  rars-auto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["bash", "test.sh"]
